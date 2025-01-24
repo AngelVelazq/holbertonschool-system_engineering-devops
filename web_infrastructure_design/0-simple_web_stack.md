@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     A[User] --> B[www.foobar.com]
     B --> C[DNS resolves www.foobar.com to 8.8.8.8]
