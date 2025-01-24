@@ -1,0 +1,32 @@
+# Simple Web Infrastructure Design
+
+## Overview
+This design describes a one-server web infrastructure for hosting the website `www.foobar.com`. The server includes:
+1. A web server (Nginx)
+2. An application server
+3. Application files (code base)
+4. A MySQL database
+
+## Workflow
+1. **DNS Resolution**:
+   - `www.foobar.com` → 8.8.8.8 (A record configured in DNS)
+2. **Web Server (Nginx)**:
+   - Handles incoming HTTP/HTTPS requests.
+   - Serves static files or forwards requests to the application server.
+3. **Application Server**:
+   - Processes requests using the application code base.
+   - Communicates with the MySQL database when necessary.
+4. **Database (MySQL)**:
+   - Stores and retrieves data for the application.
+
+## Server Details
+- **IP Address**: 8.8.8.8
+- **Domain**: www.foobar.com
+- **Services**:
+  - Web Server: Nginx
+  - Application Server: (e.g., Gunicorn for Python, PM2 for Node.js)
+  - Database: MySQL
+- **Code Base**: Application files hosted on the server.
+
+## Diagram
+
