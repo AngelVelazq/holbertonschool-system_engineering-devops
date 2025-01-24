@@ -1,4 +1,4 @@
-'''mermaid
+```mermaid
 flowchart TD
     User["User's Computer"]
     DNS["DNS Server\n(www.foobar.com)"]
